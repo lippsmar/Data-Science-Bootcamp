@@ -1,6 +1,6 @@
 # WBS Data Science Bootcamp Portfolio
 
-![cover_picture](<0. Hangman game with Python/cover_pciture.webp>)
+![cover_picture](0_Hangman_game_with_Python/cover_pciture.webp)
 
 ## Primer: Hangman
 
