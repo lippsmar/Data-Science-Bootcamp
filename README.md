@@ -6,7 +6,7 @@
 
 At the end of the two-weeks primer course on SQL, Tableau and Python, everybody builds a simple text-based Hangman.
 
-![image](https://github.com/lisardo-iniesta/datascience-bootcamp/assets/126266573/26de6cc6-dfc7-4e5d-bc03-3b6b4a23574d)
+![image](0_Hangman_game_with_Python/cover_pciture.webp)
 
 ## Chapter 1: Eniac expansion from Spain to Brazil
 
