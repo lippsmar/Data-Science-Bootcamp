@@ -6,7 +6,7 @@
 
 At the end of the two-weeks primer course on SQL, Tableau and Python, everybody builds a simple text-based Hangman.
 
-![image](0_Hangman_game_with_Python/cover_pciture.webp)
+![image](0_Hangman_game_with_Python/photo_2024-02-27_15-14-05.jpg)
 
 ## Chapter 1: Eniac expansion from Spain to Brazil
 
