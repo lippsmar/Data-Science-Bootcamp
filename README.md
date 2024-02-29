@@ -10,7 +10,7 @@ At the end of the two-weeks primer course on SQL, Tableau and Python, everybody 
 
 ## Chapter 1: Eniac expansion from Spain to Brazil
 
-In this [case study](<1. Data Driven Businesses with SQL & Tableau>), the company Eniac wants to expand
+In this [case study](1_Data Driven Businesses with SQL & Tableau), the company Eniac wants to expand
 its business to Brazil and evaluates the potential after-sales fulfillment partner
 Magist for its suitability.
 
