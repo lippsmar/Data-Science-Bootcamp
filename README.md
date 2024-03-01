@@ -1,16 +1,16 @@
 # WBS Data Science Bootcamp Portfolio
 
-![cover_picture](<0. Hangman game with Python/cover_pciture.webp>)
+![cover_picture](0_Hangman_game_with_Python/cover_pciture.webp)
 
 ## Primer: Hangman
 
 At the end of the two-weeks primer course on SQL, Tableau and Python, everybody builds a simple text-based Hangman.
 
-![image](https://github.com/lisardo-iniesta/datascience-bootcamp/assets/126266573/26de6cc6-dfc7-4e5d-bc03-3b6b4a23574d)
+![image](0_Hangman_game_with_Python/photo_2024-02-27_15-14-05.jpg)
 
 ## Chapter 1: Eniac expansion from Spain to Brazil
 
-In this [case study](<1. Data Driven Businesses with SQL & Tableau>), the company Eniac wants to expand
+In this [case study](1_Data Driven Businesses with SQL & Tableau), the company Eniac wants to expand
 its business to Brazil and evaluates the potential after-sales fulfillment partner
 Magist for its suitability.
 
