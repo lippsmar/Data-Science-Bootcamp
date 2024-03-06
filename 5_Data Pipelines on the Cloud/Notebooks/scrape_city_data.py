@@ -49,12 +49,21 @@ def scrape_city_data():
                 print(f"Population data not found for {city}.")
 
             # Search for coordinates, extract them and add to list
-            latitude = infobox.find("span", {"class": "latitude"})
-            longitude = infobox.find("span", {"class": "longitude"})
+            latitude_raw = infobox.find("span", {"class": "latitude"}).get_text()
+            parts_lat = latitude_raw.split("°")
+            degrees_lat = int(parts_lat[0])
+            minutes_lat, seconds_lat = map(int, parts_lat[1].split("′"))
+            latitude = degrees_lat + minutes_lat / 60 + seconds_lat / 3600
+            
+            longitude_raw = infobox.find("span", {"class": "longitude"}).get_text()
+            parts_lon = longitude_raw.split("°")
+            degrees_lon = int(parts_lon[0])
+            minutes_lon, seconds_lon = map(int, parts_lon[1].split("′"))
+            longitude = degrees_lon + minutes_lon / 60 + seconds_lon / 3600
 
             if latitude and longitude:
-                latitude_list.append(latitude.get_text())
-                longitude_list.append(longitude.get_text())
+                latitude_list.append(latitude)
+                longitude_list.append(longitude)
             else:
                 latitude_list.append(None)
                 longitude_list.append(None)
