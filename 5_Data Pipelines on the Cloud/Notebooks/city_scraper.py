@@ -84,7 +84,7 @@ def scrape_city_data():
         
 
     # Create DataFrame from lists
-    df = pd.DataFrame({"Country": country_list, "City": cities, "Population": population_list, "Lat": latitude_list, "Lon": longitude_list, "Elevation in m": elevation_list})
+    df = pd.DataFrame({"Country": country_list, "City": cities, "Population": population_list, "Lat": latitude_list, "Lon": longitude_list, "Elevation_in_m": elevation_list})
     
     return df
 
