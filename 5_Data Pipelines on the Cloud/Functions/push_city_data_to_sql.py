@@ -1,10 +1,10 @@
-def get_city_data():
+def push_city_data_to_sql():
 
    import pandas as pd
    import requests
    from bs4 import BeautifulSoup
    import re
-   from sqlalchemy import create_engine, inspect
+   from sqlalchemy import create_engine, inspect, Float
 
    API_key = "81f1a5b752c4569a954655d748508db5"
    cities = ["Berlin", "München", "Hamburg", "Bremen"]
@@ -56,6 +56,8 @@ def get_city_data():
 
    cities_df = pd.DataFrame(cities_dict)
 
+   cities_df["population"].astype(int)
+
    schema = "gans"
    host = "127.0.0.1"
    user = "root"
@@ -72,6 +74,8 @@ def get_city_data():
    cities_df.to_sql('cities',
                   con=engine,
                   if_exists='append',
-                  index=False)
+                  index=False,
+                  dtype={'lat': Float, 'lon': Float}
+                  )
    
    return cities_df

@@ -13,9 +13,8 @@ def push_weather_data_to_sql():
 
     API_key = "81f1a5b752c4569a954655d748508db5"
     cities = (pd.read_sql("cities", con=connection_string))["city"]
-    country_code = "DE"
+    country_code = (pd.read_sql("cities", con=connection_string))["country"]
     weather_dict = {
-        "id": [],
         "city_id": [],
         "temp_[°C]": [],
         "temp_(feels_like)_[°C]": [], 
@@ -29,7 +28,6 @@ def push_weather_data_to_sql():
         "forecast_time": [], 
         "timestamp": [] }
     
-    counter = 0
 
     for city in cities:
 
@@ -57,16 +55,16 @@ def push_weather_data_to_sql():
                     weather_dict["snow_last_3h_[mm]"].append(0)
                 weather_dict["forecast_time"].append(pd.to_datetime(openweather_raw["list"][i]["dt_txt"]))
                 weather_dict["timestamp"].append(pd.to_datetime(datetime.now().replace(microsecond=0)))
-                counter +=1
-                weather_dict['id'].append(counter)
             
         else: 
                 print(f"error code {openweather_raw['cod']} in query for {city}")
                 
     weather_df = pd.DataFrame(weather_dict)
+
+    weather_df["snow_last_3h_[mm]"].astype(float)
     
     weather_df.to_sql('weather',
-                  if_exists='replace',
+                  if_exists='append',
                   con=connection_string,
                   index=False)
 
