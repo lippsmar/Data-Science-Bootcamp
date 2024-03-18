@@ -3,59 +3,63 @@ use gans;
 drop table if exists flights;
 
 CREATE TABLE cities (
-    city_id int,
-    city varchar(255) not null,
-    country varchar(255) not null,
-    population int,
-    lat float(10, 6),
-    lon float(10, 6),
-    `elevation_[m]` int,
-    primary key (city_id)
+    city_id INT,
+    city VARCHAR(255) NOT NULL,
+    country VARCHAR(255) NOT NULL,
+    population INT,
+    lat FLOAT(10 , 6 ),
+    lon FLOAT(10 , 6 ),
+    `elevation_[m]` INT,
+    PRIMARY KEY (city_id)
 );
 
 
 CREATE TABLE weather (
-    id int AUTO_INCREMENT,
-    city_id int,
-    `temp_[°C]` float,
-    `temp_(feels_like)_[°C]` float,
-    main_weather varchar(255) not null,
-    `wind_speed_[m/s]` float,
-    `gust_speed_[m/s]` float,
-    `sight_distance_[m]` int,
-    `probability_of_precipitation_[%]` float,
-    `rain_last_3h_[mm]` float,
-    `snow_last_3h_[mm]` float,
-    forecast_time datetime,
-    `timestamp` datetime,
-    primary key (id),
-	foreign key (city_id) references cities(city_id)
-    );
-    
-    CREATE TABLE airports (
-    icao varchar(255) not null,
-    iata varchar(255) not null,
-    `name` varchar(255) not null,
-    shortName varchar(255) not null,
-    municipalityName varchar(255) not null,
-    countryCode varchar(255) not null,
-    `location.lat` float,
-    `location.lon` float,
-    primary key (iata)
-);
+    id INT AUTO_INCREMENT,
+    city_id INT,
+    temp_[°C] FLOAT,
+    temp_(feels_like)_[°C] FLOAT,
+    main_weather VARCHAR(255) NOT NULL,
+    wind_speed_[m/s] FLOAT,
+    gust_speed_[m/s] FLOAT,
+    sight_distance_[m] INT,
+    probability_of_precipitation_[%] FLOAT,
+    rain_last_3h_[mm] FLOAT,
+    snow_last_3h_[mm] FLOAT,
+    forecast_time DATETIME,
+    timestamp DATETIME,
+    PRIMARY KEY (id),
+    FOREIGN KEY (city_id)
+        REFERENCES cities (city_id)
+)
+ 
+CREATE TABLE airports (
+    icao VARCHAR(255) NOT NULL,
+    iata VARCHAR(255) NOT NULL,
+    `name` VARCHAR(255) NOT NULL,
+    shortName VARCHAR(255) NOT NULL,
+    municipalityName VARCHAR(255) NOT NULL,
+    countryCode VARCHAR(255) NOT NULL,
+    `location.lat` FLOAT,
+    `location.lon` FLOAT,
+    PRIMARY KEY (iata)
+)
 
 CREATE TABLE cities_airports (
-city_id INT,
-iata varchar(255) not null,
-foreign key (city_id) references cities(city_id),
-foreign key (iata) references airports(iata)
-);
+    city_id INT,
+    iata VARCHAR(255) NOT NULL,
+    FOREIGN KEY (city_id)
+        REFERENCES cities (city_id),
+    FOREIGN KEY (iata)
+        REFERENCES airports (iata)
+)
 
 CREATE TABLE flights (
-flight_num varchar(255) not null,
-departure_iata varchar(255) not null,
-arrival_iata varchar(255) not null,
-arrival_time datetime,
-primary key (flight_num),
-foreign key (arrival_iata) references cities_airports(iata)
-);
+    flight_num VARCHAR(255) NOT NULL,
+    departure_iata VARCHAR(255) NOT NULL,
+    arrival_iata VARCHAR(255) NOT NULL,
+    arrival_time DATETIME,
+    PRIMARY KEY (flight_num),
+    FOREIGN KEY (arrival_iata)
+        REFERENCES cities_airports (iata)
+)
