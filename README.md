@@ -15,7 +15,7 @@ its business to Brazil and evaluates the potential after-sales fulfillment partn
 Magist for its suitability.
 
 
-![scatter plot of all sellers with the x-axis saying what fraction of products was sold in tech categories and the y-axis depicting the average monthly sales] (<1. Data Driven Businesses with SQL & Tableau/images/Sellers_ Monthly Sales and Tech Affinity.png>)
+![scatter plot of all sellers with the x-axis saying what fraction of products was sold in tech categories and the y-axis depicting the average monthly sales](<1. Data Driven Businesses with SQL & Tableau/images/Sellers_ Monthly Sales and Tech Affinity.png>)
 
 ## Chapter 2: Introduction to pandas
 
