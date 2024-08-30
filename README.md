@@ -4,12 +4,12 @@
 
 ## Primer: Hangman
 
-At the end of the two-weeks primer course on SQL, Tableau and Python, everybody builds a simple text-based Hangman.
+At the end of the two-weeks primer course on SQL, Tableau and Python, everybody builds a simple text-based [Hangman](<0_Hangman_game_with_Python>).
 
 
 ## Chapter 1: Eniac expansion from Spain to Brazil
 
-In this case study (1_Data Driven Businesses with SQL & Tableau), the company Eniac wants to expand
+In this [case study](<1_Data Driven Businesses with SQL & Tableau>), the company Eniac wants to expand
 its business to Brazil and evaluates the potential after-sales fulfillment partner
 Magist for its suitability.
 
@@ -22,7 +22,7 @@ Read about our challenges [here](<2_Pandas>)!
 
 ## Chapter 3: Data Cleaning and Storytelling
 
-The skills we learned in this chapter: Data Cleaning, Data Visualization & Data Storytelling. Therefore we were introduced into seaborn and matplotlib and we dived more into pandas. Check more details about our tasks [here](3_
+The skills we learned in this chapter: Data Cleaning, Data Visualization & Data Storytelling. Therefore we were introduced into Seaborn and Matplotlib and we dived more into Pandas. Check more details about our tasks [here](<3_Data Storytelling & Data Cleaning>)!
 
 ## Chapter 4: A/B Testing
 *coming soon*
