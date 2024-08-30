@@ -21,7 +21,8 @@ As second basic data-handling system after SQL, we were introduced to the Python
 Read about our challenges [here](<2_Pandas>)! 
 
 ## Chapter 3: Data Cleaning and Storytelling
-*coming soon*
+
+The skills we learned in this chapter: Data Cleaning, Data Visualization & Data Storytelling. Therefore we were introduced into seaborn and matplotlib and we dived more into pandas. Check more details about our tasks [here](3_
 
 ## Chapter 4: A/B Testing
 *coming soon*
