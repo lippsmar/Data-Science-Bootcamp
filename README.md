@@ -29,6 +29,6 @@ The skills we learned in this chapter: Data Cleaning, Data Visualization & Data 
 
 ## Chapter 5: Data Pipelines on the Cloud
 
-In this two-week project, we learned and exercised ETL data-engineering skills, i.e. extracting, transforming and loading data into storage for comprehensive analysis. We scraped the web, used public APIs, transformed and augmented the data and stored it in an SQL database. The finished ETL process was then wrapped into a Google cloud function for automatic execution.
+In this two-week project, we learned and exercised ETL data-engineering skills, i.e. extracting, transforming and loading data into storage for comprehensive analysis. We scraped the web, used public APIs, transformed and augmented the data and stored it in an SQL database. The finished ETL process was then wrapped into a Google cloud function for automatic execution. I wrote my first [Medium article](<https://medium.com/@spceng/my-first-data-engineering-project-data-pipelines-in-action-for-gans-acfa7b3641cc>) about this project.
 
 
