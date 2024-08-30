@@ -7,4 +7,5 @@ At the end of the two-weeks primer course on SQL, Tableau and Python, everybody 
 
 We also start to learn how to use Google Colab for coding and sharing code.
 
-![image] (0_Hangman_game_with_Python/photo_2024-02-27_15-14-05.jpg)
+![photo_2024-02-27_15-14-05](https://github.com/user-attachments/assets/85455bc0-c5a8-47de-8ba8-284ff9c151f9)
+
