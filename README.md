@@ -6,7 +6,6 @@
 
 At the end of the two-weeks primer course on SQL, Tableau and Python, everybody builds a simple text-based Hangman.
 
-![image](0_Hangman_game_with_Python/photo_2024-02-27_15-14-05.jpg)
 
 ## Chapter 1: Eniac expansion from Spain to Brazil
 
@@ -14,8 +13,6 @@ In this case study (1_Data Driven Businesses with SQL & Tableau), the company En
 its business to Brazil and evaluates the potential after-sales fulfillment partner
 Magist for its suitability.
 
-
-![scatter plot of all sellers with the x-axis saying what fraction of products was sold in tech categories and the y-axis depicting the average monthly sales](<1. Data Driven Businesses with SQL & Tableau/images/Sellers_ Monthly Sales and Tech Affinity.png>)
 
 ## Chapter 2: Introduction to pandas
 
