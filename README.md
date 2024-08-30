@@ -10,12 +10,12 @@ At the end of the two-weeks primer course on SQL, Tableau and Python, everybody 
 
 ## Chapter 1: Eniac expansion from Spain to Brazil
 
-In this [case study](1_Data Driven Businesses with SQL & Tableau), the company Eniac wants to expand
+In this case study (1_Data Driven Businesses with SQL & Tableau), the company Eniac wants to expand
 its business to Brazil and evaluates the potential after-sales fulfillment partner
 Magist for its suitability.
 
 
-![scatter plot of all sellers with the x-axis saying what fraction of products was sold in tech categories and the y-axis depicting the average monthly sales](<1. Data Driven Businesses with SQL & Tableau/images/Sellers_ Monthly Sales and Tech Affinity.png>)
+![scatter plot of all sellers with the x-axis saying what fraction of products was sold in tech categories and the y-axis depicting the average monthly sales] (<1. Data Driven Businesses with SQL & Tableau/images/Sellers_ Monthly Sales and Tech Affinity.png>)
 
 ## Chapter 2: Introduction to pandas
 
