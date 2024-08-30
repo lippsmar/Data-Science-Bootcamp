@@ -18,7 +18,7 @@ Magist for its suitability.
 
 As second basic data-handling system after SQL, we were introduced to the Python
 [pandas](https://pandas.pydata.org/) library.
-Read about our challenges [here](<2. Pandas>)!
+Read about our challenges [here](<2_Pandas>)! 
 
 ## Chapter 3: Data Cleaning and Storytelling
 *coming soon*
