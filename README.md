@@ -1,6 +1,6 @@
 # WBS Data Science Bootcamp Portfolio
 
-![cover_picture](<img width="722" alt="Screenshot 2024-09-20 140938" src="https://github.com/user-attachments/assets/f9614ac0-66fe-4b5d-9d9e-ded386172ec4">
+![cover_picture](<https://github.com/user-attachments/assets/f9614ac0-66fe-4b5d-9d9e-ded386172ec4>
 )
 
 ## Primer: Hangman
