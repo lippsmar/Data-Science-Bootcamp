@@ -41,7 +41,7 @@ def connection():
         schema = "gans"
         host = "23.251.142.169" # Change this to your instance's IP
         user = "root"
-        password = "MXXX" # Your database password goes here
+        password = "XXX" # Your database password goes here
         port = 3306
         connection_string =  f'mysql+pymysql://{user}:{password}@{host}:{port}/{schema}'
         return connection_string
