@@ -1,0 +1,5 @@
+secret:
+  ignored_matches:
+  - match: 3e447bfa71936a8c09f46fcfbf0b149d5448420741a497ec3349a1ea1ba17fe9
+    name: Spotify Keys - secrets/.env:l.3
+version: 2
