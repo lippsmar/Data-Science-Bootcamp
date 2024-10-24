@@ -14,7 +14,7 @@ def push_city_data_to_sql():
    import re
    from sqlalchemy import create_engine, inspect, Float
 
-   API_key = "81f1a5b752c4569a954655d748508db5"
+   API_key = "XXX"
    cities = ["Berlin", "München", "Hamburg", "Bremen"]
    country_code = "DE"
    cities_dict = {"city_id": [], "city": [], "country": [],"population": [], "lat": [], "lon": [], "elevation_[m]": []}
@@ -69,7 +69,7 @@ def push_city_data_to_sql():
    schema = "gans"
    host = "127.0.0.1"
    user = "root"
-   password = "MySQLjau"
+   password = "XXX"
    port = 3306
    connection_string = f'mysql+pymysql://{user}:{password}@{host}:{port}/{schema}'
 
@@ -97,11 +97,11 @@ def push_weather_data_to_sql():
     schema = "gans"
     host = "127.0.0.1"
     user = "root"
-    password = "MySQLjau"
+    password = "XXX"
     port = 3306
     connection_string = f'mysql+pymysql://{user}:{password}@{host}:{port}/{schema}'
 
-    API_key = "81f1a5b752c4569a954655d748508db5"
+    API_key = "XXX"
     cities = (pd.read_sql("cities", con=connection_string))["city"]
     country_code = (pd.read_sql("cities", con=connection_string))["country"]
     weather_dict = {
@@ -170,7 +170,7 @@ def push_cities_airports_to_sql():
     schema = "gans"
     host = "127.0.0.1"
     user = "root"
-    password = "MySQLjau"
+    password = "XXX"
     port = 3306
     connection_string = f'mysql+pymysql://{user}:{password}@{host}:{port}/{schema}'
 
@@ -205,7 +205,7 @@ def push_airport_data_to_sql():
     schema = "gans"
     host = "127.0.0.1"
     user = "root"
-    password = "MySQLjau"
+    password = "XXX"
     port = 3306
     connection_string = f'mysql+pymysql://{user}:{password}@{host}:{port}/{schema}'
 
@@ -223,7 +223,7 @@ def push_airport_data_to_sql():
 
         headers = {
         "X-RapidAPI-Host": "aerodatabox.p.rapidapi.com",
-        "X-RapidAPI-Key": "14a44098c8mshe4536a007985112p1e3b4bjsn8fd805eb6bd4"
+        "X-RapidAPI-Key": "XXX"
         }
 
         response = requests.request("GET", url, headers=headers, params=querystring)
@@ -256,7 +256,7 @@ def push_flights_datad_to_sql():
 	schema = "gans"
 	host = "127.0.0.1"
 	user = "root"
-	password = "MySQLjau"
+	password = "XXX"
 	port = 3306
 	connection_string = f'mysql+pymysql://{user}:{password}@{host}:{port}/{schema}'
 
@@ -271,7 +271,7 @@ def push_flights_datad_to_sql():
 	querystring = {"withLeg":"false","direction":"Arrival","withCancelled":"false","withCodeshared":"false", "withCargo":"false","withPrivate":"false","withLocation":"false"}
 
 	headers = {
-		"X-RapidAPI-Key": "14a44098c8mshe4536a007985112p1e3b4bjsn8fd805eb6bd4",
+		"X-RapidAPI-Key": "XXX",
 		"X-RapidAPI-Host": "aerodatabox.p.rapidapi.com"
 	}
 

@@ -1,1 +1,1 @@
-{"last_found_secrets": [{"name": "Spotify Keys - c:\\Users\\Marvin\\Documents\\WBS\\Data-Science-Bootcamp\\secrets\\.env", "match": "3e447bfa71936a8c09f46fcfbf0b149d5448420741a497ec3349a1ea1ba17fe9"}]}
+{"last_found_secrets": [{"match": "ef7c51b40a4ca927f89051b03bd89011658d07329d608948ed395969de83b805", "name": "RapidAPI Key - c:\\Users\\Marvin\\Documents\\WBS\\Data-Science-Bootcamp\\5_Data Pipelines on the Cloud\\Functions\\send_and_receive_data.py"}]}

@@ -7,7 +7,7 @@ def push_cities_airports_to_sql():
     schema = "gans"
     host = "127.0.0.1"
     user = "root"
-    password = "MySQLjau"
+    password = "XXX"
     port = 3306
     connection_string = f'mysql+pymysql://{user}:{password}@{host}:{port}/{schema}'
 

@@ -20,7 +20,7 @@ def insert(request):
 # def connection():
 #   connection_name = "cogent-bison-417011:europe-west1:wbs-mysql-db"
 #   db_user = "root"
-#   db_password = "googlecloudjau"
+#   db_password = "XXX"
 #   schema_name = "gans"
 
 #   driver_name = 'mysql+pymysql'
@@ -41,14 +41,14 @@ def connection():
         schema = "gans"
         host = "23.251.142.169" # Change this to your instance's IP
         user = "root"
-        password = "MySQLjau" # Your database password goes here
+        password = "MXXX" # Your database password goes here
         port = 3306
         connection_string =  f'mysql+pymysql://{user}:{password}@{host}:{port}/{schema}'
         return connection_string
 
 def push_city_data_to_sql():
 
-  API_key = "81f1a5b752c4569a954655d748508db5"
+  API_key = "XXX"
   cities = ["Berlin", "München", "Hamburg", "Bremen"]
   country_code = "DE"
   cities_dict = {"city_id": [], "city": [], "country": [],"population": [], "lat": [], "lon": [], "elevation_[m]": []}
@@ -117,7 +117,7 @@ def push_city_data_to_sql():
 
 def push_weather_data_to_sql():
 
-  API_key = "81f1a5b752c4569a954655d748508db5"
+  API_key = "XXX"
   cities = (pd.read_sql("cities", con=connection()))["city"]
   country_code = (pd.read_sql("cities", con=connection()))["country"]
   weather_dict = {
@@ -217,7 +217,7 @@ def push_airport_data_to_sql():
 
     headers = {
     "X-RapidAPI-Host": "aerodatabox.p.rapidapi.com",
-    "X-RapidAPI-Key": "14a44098c8mshe4536a007985112p1e3b4bjsn8fd805eb6bd4"
+    "X-RapidAPI-Key": "XXX"
     }
 
     response = requests.request("GET", url, headers=headers, params=querystring)
@@ -252,7 +252,7 @@ def push_flights_datad_to_sql():
 	querystring = {"withLeg":"false","direction":"Arrival","withCancelled":"false","withCodeshared":"false", "withCargo":"false","withPrivate":"false","withLocation":"false"}
 
 	headers = {
-		"X-RapidAPI-Key": "14a44098c8mshe4536a007985112p1e3b4bjsn8fd805eb6bd4",
+		"X-RapidAPI-Key": "XXX",
 		"X-RapidAPI-Host": "aerodatabox.p.rapidapi.com"
 	}
 

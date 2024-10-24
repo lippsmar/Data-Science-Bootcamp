@@ -7,7 +7,7 @@ def get_city_data():
     from bs4 import BeautifulSoup
     import re
 
-    API_key = "81f1a5b752c4569a954655d748508db5"
+    API_key = "XXX"
     cities = ["Berlin", "München"]
     country_code = "DE"
     cities_dict = {"city_id": [], "city": [], "country": [], "population": [], "lat": [], "lon": [], "elevation_[m]": []}

@@ -6,7 +6,7 @@ def push_city_data_to_sql():
    import re
    from sqlalchemy import create_engine, inspect, Float
 
-   API_key = "81f1a5b752c4569a954655d748508db5"
+   API_key = "XXX"
    cities = ["Berlin", "München", "Hamburg", "Bremen"]
    country_code = "DE"
    cities_dict = {"city_id": [], "city": [], "country": [],"population": [], "lat": [], "lon": [], "elevation_[m]": []}
@@ -61,7 +61,7 @@ def push_city_data_to_sql():
    schema = "gans"
    host = "127.0.0.1"
    user = "root"
-   password = "MySQLjau"
+   password = "XXX"
    port = 3306
    connection_string = f'mysql+pymysql://{user}:{password}@{host}:{port}/{schema}'
 

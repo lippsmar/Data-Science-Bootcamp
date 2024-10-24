@@ -7,11 +7,11 @@ def push_weather_data_to_sql():
     schema = "gans"
     host = "127.0.0.1"
     user = "root"
-    password = "MySQLjau"
+    password = "XXX"
     port = 3306
     connection_string = f'mysql+pymysql://{user}:{password}@{host}:{port}/{schema}'
 
-    API_key = "81f1a5b752c4569a954655d748508db5"
+    API_key = "XXX"
     cities = (pd.read_sql("cities", con=connection_string))["city"]
     country_code = (pd.read_sql("cities", con=connection_string))["country"]
     weather_dict = {

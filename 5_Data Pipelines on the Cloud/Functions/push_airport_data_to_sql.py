@@ -9,7 +9,7 @@ def push_airport_data_to_sql():
     schema = "gans"
     host = "127.0.0.1"
     user = "root"
-    password = "MySQLjau"
+    password = "XXX"
     port = 3306
     connection_string = f'mysql+pymysql://{user}:{password}@{host}:{port}/{schema}'
 
@@ -27,7 +27,7 @@ def push_airport_data_to_sql():
 
         headers = {
         "X-RapidAPI-Host": "aerodatabox.p.rapidapi.com",
-        "X-RapidAPI-Key": "14a44098c8mshe4536a007985112p1e3b4bjsn8fd805eb6bd4"
+        "X-RapidAPI-Key": "XXX"
         }
 
         response = requests.request("GET", url, headers=headers, params=querystring)

@@ -5,7 +5,7 @@ def get_weather_data():
     from datetime import datetime
     import requests
 
-    API_key = "81f1a5b752c4569a954655d748508db5"
+    API_key = "XXX"
     cities = ["Berlin", "München"]
     country_code = "DE"
     weather_dict = {
