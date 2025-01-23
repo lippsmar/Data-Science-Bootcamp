@@ -6,7 +6,7 @@ The topics of our second bootcamp week for learning
 - data import
 - filtering
 - aggregation
-- string filtering including regexps
+- string filtering including regex
 - range and set filtering
 - grouping
 - joins/merges
